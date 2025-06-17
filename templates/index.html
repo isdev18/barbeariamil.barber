@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia Mil Barber 💈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="static/WhatsApp Image 2025-06-17 at 08.43.57.jpeg" alt="Logo Barbearia" />
+                <span>Mil Barber 💈</span>
+            </div>
+            <nav>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Barbearia Mil Barber</h1>
+            <p>Tradição, estilo e cuidado para você.</p>
+            <a href="https://wa.me/71996395596" class="btn">Agende seu horário</a>
+        </div>
+    </section>
+    <section class="carousel-section">
+        <div class="carousel">
+            <img src="static/WhatsApp Image 2025-06-17 at 09.46.14.jpeg" alt="Foto da Barbearia">
+        </div>
+    </section>
+    <section id="servicos" class="container">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-grid">
+            <div class="servico-card">
+                <img src="static/WhatsApp Image 2025-06-17 at 09.57.33.jpeg" alt="Corte de cabelo">
+                <h3>Corte de Cabelo</h3>
+                <p>Do clássico ao moderno, cortes para todos os estilos.</p>
+            </div>
+            <div class="servico-card">
+                <img src="static/WhatsApp Image 2025-06-17 at 10.08.00.jpeg" alt="Barba">
+                <h3>Barba</h3>
+                <p>Barba desenhada, aparada ou completa, com acabamento perfeito.</p>
+            </div>
+            <div class="servico-card">
+                <img src="{{ url_for('static', filename='sobrancelha.jpg') }}" alt="Sobrancelha">
+                <h3>Sobrancelha</h3>
+                <p>Design masculino para realçar seu olhar.</p>
+            </div>
+            <div class="servico-card">
+                <img src="static/WhatsApp Image 2025-06-17 at 10.26.08.jpeg" alt="Hidratação">
+                <h3>Corte com desenhos</h3>
+                <p>Design personalizado.</p>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="container sobre-section">
+        <div class="sobre-img">
+            <img src="static/WhatsApp Image 2025-06-17 at 08.43.10.jpeg" alt="Interior da Barbearia">
+        </div>
+        <div class="sobre-texto">
+            <h2>Sobre Nós</h2>
+            <p>
+                A Barbearia Mil Barber é referência em atendimento masculino, unindo tradição e modernidade em um ambiente acolhedor. Nossa equipe é formada por profissionais experientes, prontos para oferecer o melhor em cortes, barbas e cuidados especiais.
+            </p>
+            <p>
+                Venha viver uma experiência única, com produtos de alta qualidade e atendimento personalizado.
+            </p>
+        </div>
+    </section>
+    <section id="contato" class="container contato-section">
+        <h2>Contato</h2>
+        <div class="contato-info">
+            <div>
+                <strong>WhatsApp:</strong> <a href="https://wa.me/71996395596" target="_blank">(71) 99639-5596</a>
+            </div>
+            <div>
+                <strong>Endereço:</strong> Rua Oscar Pereira de Souza, Bairro: Pioneiro, Catu - Ba</div>
+            <div>
+                <strong>Horário:</strong> Seg a Sáb: 8h às 18h
+            </div>
+        </div>
+        <a href="https://wa.me/71996395596" class="btn" target="_blank">Agendar pelo WhatsApp</a>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Barbearia Mil Barber. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
